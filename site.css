@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.google.com/specimen/Russo+One');
+/*dinh nghia chung*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+.wrapper{
+	width: 100%;
+	background: #F7B5B6;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+/*day la navigation bar*/
+.navbar{
+	width: 100vw;
+	height: 60px;
+	background: rgba(255,255,255,1.0);
+	position: fixed;
+	z-index: 9999;
+	overflow: hidden;
+
+}
+.navbar .logo{
+	float: left;
+/*	background: rgba(110,121,248,1.00);*/
+	width: 10vw;
+	height: 60px;
+	
+	
+}
+.logo a{
+	text-decoration: none;
+	color: rgba(205,152,24,1.00);
+	line-height: 60px;
+	font-size: 3vw;
+	font-family: "Russoone","sans-serif";
+}
+/*menu*/
+
+.navbar .menu{
+	float: left;
+/*	background: rgba(112,234,244,1.00);*/
+	width: 90vw;
+	height: 60px;
+	
+}
+.menu .khoangtrong{
+	height: 60px;
+	width: 30vw;
+	float:left;
+}
+.menu a{
+	float: left;
+/*	background: rgba(217,79,81,1.00);*/
+	width: 15vw;
+	font-size: 1.5vw;
+	font-family: "Russoone","sans-serif";
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(205,152,24,1.00);
+	line-height: 60px;
+	height: 60px;
+	display: block;
+}
+.menu a:hover {
+/*	color: white;*/
+	
+	border-bottom: 5px solid rgba(248,185,50,1.00);
+	
+}
+
+/*header*/
+.header {
+	width: 100%;
+	height: 100vh;
+	/*backup cho nen gradient*/
+	background: rgba(248,185,50,1.00);
+/*	color:rgba(255,203,52,1.00);*/
+/*	background-image: linear-gradient(to bottom, rgba(255,203,52,1.00), rgba(248,185,50,1.00));*/
+	background-image: linear-gradient(to bottom, rgba(255,203,52,1.00),rgba(248,185,50,1.00));
+	
+	
+}
+.header .box1{
+	width: 40vw;
+	height: 60vh;
+	background: rgba(255,255,255,1.00);
+	position: relative;
+	margin: 0 auto;
+	top: 20vh;
+	z-index:5;
+	 
+}
+.box1 h1{
+	font-size: 40vh;
+	font-family: "Russoone","sans-serif";
+	text-transform:capitalize;
+	display: block;
+	padding-left: 1vw;
+	padding-top: 2vh;
+	text-align: left;
+	line-height: 40vh;
+	
+}
+.box1 p{
+	font-size: 2vw;
+	font-family: "Russoone","sans-serif";
+	display: block;
+	padding-left: 2vw;
+	text-align: left;
+	color: black;
+	
+}
+.header .box2{
+	border: 5px solid black;
+	width: 40vw;
+	height: 80vh;
+	position: absolute;
+	top: 10vh;
+	left: 25vw;
+	z-index:1;
+	
+}
+/*space adjusment*/
+.space{
+	width: 100%;
+/*	background: rgba(75,189,177,1.00);*/
+}
+/*content*/
+.content {
+	width: 100%;
+	height: 100vh;
+}
+.content h1,.footer h1{
+	
+	font-size: 5vh;
+	line-height: 7vh;	
+	width: 100%;
+	border-bottom: 1px solid  rgba(205,152,24,1.00);
+	border-top: 1px solid  rgba(205,152,24,1.00);
+	text-transform: capitalize;
+	font-family: "Russoone","sans-serif";
+	/*mau nen*/
+/*	color: rgba(248,185,50,1.00);*/
+	/*mau chu*/
+	color: rgba(205,152,24,1.00);
+}
+
+
+/**/
+.contain{
+	width: 90vw;
+	height: auto;
+	margin: 0 auto;
+}
+/*about*/
+#about{
+	background: white;
+}
+#about h2{
+	display: block;
+	width: 30vw;
+	height:30vh;
+	float: left;
+/*	background: rgba(212,15,19,1.00);*/
+/*	color: black;*/
+	color: rgba(205,152,24,1.00);
+	text-transform: capitalize;
+	font-family: "Russoone","sans-serif";
+	font-size: 3vw;
+	line-height: 2vw;
+	text-align: left;
+	padding-top:1vh;
+	padding-left: 1vw;
+	
+}
+#about p{
+	display: block;
+	float: left;
+	width: 29vw;
+	height:30vh;
+	margin: 0 0 1vh 1vw;
+/*	background: rgba(141,213,97,1.00);*/
+	text-align: left;
+	padding-top:1vh;
+	padding-left: 1vw;
+	font-size:5vh;
+	color: black;
+	line-height: 7vh;
+}
+
+/*portfolio*/
+#portfolio{
+	background: rgba(22,22,22,1.00);
+}
+/*slideshow*/
+slideshow-container {
+  width: 90vw;
+height: 80vh;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: 3vh;
+  display: block;
+  height: 3vh;
+  line-height: 3vh;
+  color: white;
+  font-weight: bold;
+  font-size:5vh;
+  border-radius: 1vw;
+  user-select: none;
+}
+.prev{
+	float: left;
+	position: relative;
+	bottom: 45vh;
+	z-index: 400;
+}
+.next{
+	float: right;
+	position: relative;
+	bottom: 45vh;
+	z-index: 401;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+#portfolio img{
+	width: 75vh;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	position:relative;
+	top: 5vh;
+	z-index: 2;
+	
+}
+#portfolio .text {
+	color: #f2f2f2;
+	font-size: 3vh;
+	text-align: center;
+	position: relative;
+	bottom: 5vh;
+	z-index: 100;
+	background: rgba(0,0,0,0.53);
+	width: 75vh;
+	margin: 0 auto;
+	line-height: 10vh;
+}
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0.5vw 0.5vw;
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+	float: left;
+  position: relative;
+	left: 30vw;
+	bottom: 77vh;
+	z-index: 50;
+	
+}
+.active, .dot:hover {
+  background-color: rgba(205,152,24,1.00);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*blog*/
+#blog{
+	background: white;
+}
+.blog_c{
+	background: rgba(53,57,215,1.00);
+	height: 29vw;
+	width: 29vw;
+	float:left;
+	background:rgba(193,55,57,1.00);
+	margin: 0.5vw;
+	position: relative;
+}
+.blog_c img{
+	opacity: 1;
+	display:block;
+	width: 100%;
+	max-width: 29vw;
+	height: auto;
+	overflow-x: hidden;
+	backface-visibility: hidden;
+}
+.blog_cont{
+	opacity: 0;
+	position: absolute;
+	top:80%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: left;
+	background: rgba(0,0,0,0.80);
+	
+}
+.blog_cont h2,p{
+	color: white;
+	margin:1vh 1vh 0 1vh;
+	font-size: 3vh;
+}
+
+.blog_c:hover img{
+opacity: 0.5;
+}
+.blog_c:hover .blog_cont{
+	opacity: 1;
+}
+.seemore{
+	width: 10vw;
+	min-width: 100px;
+	height: 7vh;
+	line-height: 7vh;
+	margin: 0 auto;
+	border: 1px solid  rgba(205,152,24,1.00);
+	border-radius:5vh;
+/*	background: rgba(192,46,48,1.00);*/
+	position:absolute;
+	top:390vh;
+	left: 45vw;
+	z-index: 100;
+	color:rgba(205,152,24,1.00);
+	
+}
+.seemore:hover{
+	background:rgba(205,152,24,1.00);
+	color:white;
+}
+/*footer*/
+.footer{
+	width: 100%;
+	height: 100vh;
+	background: rgba(22,22,22,1.00);
+	color: white;
+	text-align: center;
+}
+.footer p{
+	line-height: 8vh;
+	font-size: 3vh;
+}
+.copyright{
+	width: 100%;
+	height: 8vh;
+	background: rgba(240,240,240,1.00);
+	position: relative;
+	top:20vh;	
+	
+}
+.copyright p{
+	font-size: 3vh;
+	line-height: 8vh;
+	color: rgba(26,26,26,1.00);
+}
+
+
+/*banner*/
+#banner{
+	background-image: url("image/banner.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
