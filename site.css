@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.google.com/specimen/Russo+One');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*dinh nghia chung*/
 *{
 	padding: 0;
@@ -9,6 +10,14 @@
 }
 html{
 	scroll-behavior: smooth;
+}
+h1,h2,h3,a{
+	font-family: 'Russo One', sans-serif;
+	font-style: normal;
+}
+p
+{
+	font-family: 'Open Sans', sans-serif;
 }
 .wrapper{
 	width: 100%;
@@ -42,7 +51,8 @@ html{
 	color: rgba(205,152,24,1.00);
 	line-height: 60px;
 	font-size: 3vw;
-	font-family: "Russoone","sans-serif";
+/*	font-family: 'Russo One', sans-serif;*/
+/*	font-family: "Russoone","sans-serif";*/
 }
 /*menu*/
 
@@ -63,7 +73,8 @@ html{
 /*	background: rgba(217,79,81,1.00);*/
 	width: 15vw;
 	font-size: 1.5vw;
-	font-family: "Russoone","sans-serif";
+/*	font-family: "Russoone","sans-serif";*/
+	font-family: 'Russo One', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: rgba(205,152,24,1.00);
@@ -102,7 +113,8 @@ html{
 }
 .box1 h1{
 	font-size: 40vh;
-	font-family: "Russoone","sans-serif";
+/*	font-family: 'Russo One', sans-serif;*/
+/*	font-family: "Russoone","sans-serif";*/
 	text-transform:capitalize;
 	display: block;
 	padding-left: 1vw;
@@ -113,7 +125,8 @@ html{
 }
 .box1 p{
 	font-size: 2vw;
-	font-family: "Russoone","sans-serif";
+/*	font-family: 'Russo One', sans-serif;*/
+/*	font-family: "Russoone","sans-serif";*/
 	display: block;
 	padding-left: 2vw;
 	text-align: left;
@@ -148,7 +161,7 @@ html{
 	border-bottom: 1px solid  rgba(205,152,24,1.00);
 	border-top: 1px solid  rgba(205,152,24,1.00);
 	text-transform: capitalize;
-	font-family: "Russoone","sans-serif";
+/*	font-family: "Russoone","sans-serif";*/
 	/*mau nen*/
 /*	color: rgba(248,185,50,1.00);*/
 	/*mau chu*/
@@ -175,8 +188,8 @@ html{
 /*	color: black;*/
 	color: rgba(205,152,24,1.00);
 	text-transform: capitalize;
-	font-family: "Russoone","sans-serif";
-	font-size: 3vw;
+/*	font-family: "Russoone","sans-serif";*/
+	font-size: 2vw;
 	line-height: 2vw;
 	text-align: left;
 	padding-top:1vh;
@@ -193,9 +206,9 @@ html{
 	text-align: left;
 	padding-top:1vh;
 	padding-left: 1vw;
-	font-size:5vh;
+	font-size:3vh;
 	color: black;
-	line-height: 7vh;
+	line-height: 5vh;
 }
 
 /*portfolio*/
@@ -298,7 +311,7 @@ height: 80vh;
 	background: white;
 }
 .blog_c{
-	background: rgba(53,57,215,1.00);
+/*	background: rgba(53,57,215,1.00);*/
 	height: 29vw;
 	width: 29vw;
 	float:left;
